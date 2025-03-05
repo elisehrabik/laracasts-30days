@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+// Created using the `php artisan make:model Employer -m -f` command
+// This command created the Model, Migration, and Factory
+class Employer extends Model
+{
+    use HasFactory;
+}

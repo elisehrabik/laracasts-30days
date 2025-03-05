@@ -16,6 +16,7 @@ return new class extends Migration
             $table->id();
             // Created new table using `php artisan migrate` command.
             // Press Ctrl + Shift + R to refresh TablePlus
+            $table->foreignIdFor(\App\Models\Employer::class);
             $table->string('title');
             $table->string('salary');
             $table->timestamps();
