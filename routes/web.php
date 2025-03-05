@@ -13,6 +13,13 @@ Route::get('/jobs', function () {
     ]);
 });
 
+Route::get('/jobs-test', function () {
+    $jobs = Job::all();
+//    dd($jobs);
+//    dd($jobs[0]);
+    dd($jobs[0]->title . ' ' . $jobs[0]->salary);
+});
+
 Route::get('/jobs/{id}', function ($id) {
     $job = Job::find($id);
 
